@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header  class="">
+        <div  class="container header__wrap">
+            <img src="img/logo.png" alt="Логотип Портфолио" class="header__logo-img">
+            <nav class="header__nav">
+                <ul class="menu">
+                    <li class="header__item">
+                        <a href="#home" class="header__link">Домой</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#about" class="header__link">Обо мне</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#skills" class="header__link">Навыки</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#portfolio" class="header__link">Портфолио</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#footer" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__hamburger hamburger">Открыть меню</button>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="primary__info">
+                <h1 class="primary__title">Анастасия Сафеева</h1>
+                <p class="primary__text">Frontend developer 19 лет, Челябинск</p>
+            </div>
+            <div class="primary__image--user">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/myPhoto_small.jpg">
+                    <img src="img/myPhoto_large.jpg" alt="моя фотокарточка">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container about">
+            <h2 class="title" id="about">Обо мне</h2>
+            <div class="about__info">
+                <p class="about__text">Привет, меня зовут Настя. Я&nbsp;Frontend разработчик из&nbsp;Челябинска. Мне интересна <nobr>веб-разработка</nobr> и&nbsp;все что этим связано.</p>
+                <p class="about__text">Сейчас я&nbsp;учусь на&nbsp;курсе &laquo;Frontend Dev&raquo; в&nbsp;Napoleon IT&nbsp;School.<br /></p>
+                <p class="about__text">Планирую и&nbsp;дальше развиваться в&nbsp;этой сфере. Рассмотрю любое коммерческое предложение о&nbsp;сотрудничестве.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 class="title">Навыки</h2>
+            <h3 class="skills__text">используемые технологии:</h3>  
+            <div class="skills__logo">
+                <div class="logo__text__img">
+                    <img src="img/javascript-logo.png" alt="Логотип js" class="logo-img">
+                    <p class="logo__text">JavaScript</p>
+                    <p class="logo__star">&#9733;&#9734;&#9734;&#9734;&#9734;</p>
+                </div>
+                <div class="logo__text__img"> 
+                    <img src="img/css-logo.png" alt="Логотип css" class="logo-img"> 
+                    <p class="logo__text">CSS</p>
+                    <p class="logo__star">&#9733;&#9734;&#9734;&#9734;&#9734;</p>
+                </div>
+                <div class="logo__text__img">
+                    <img src="img/html-logo.png" alt="Логотип html" class="logo-img">
+                    <p class="logo__text">HTML</p>
+                    <p class="logo__star">&#9733;&#9734;&#9734;&#9734;&#9734;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div  class="container portfolio">
+            <h2 class="title">Портфолио</h2>
+            <img src="img/shawarma-bg 1.jpg" alt="Фотокарточка сайта шаурмы" class="portfolio__img">
+            <p class="portfolio__text">Shawarma - лучшая шаурма в городе</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <h2 class="title">Контакты</h2>
+            <p class="footer__text">Хотите связаться со мной или узнать больше?</p>
+            <div class="button">
+                <a class="footer__button">Написать мне</a>
+            </div>
+            <ul class="footer__social social__list">
+                <li class="social__item">
+                    <a href="https://vk.com/safaabitch" class="social__link social__link__vk"><img src="img/vk.png" alt="значок вк" class="social__img"></a>
+                </li>
+                <li class="social__item">
+                    <a href="https://t.me/safaabitch" class="social__link social__link__tg"><img src="img/telegram.png" alt="значок тг" class="social__img"></a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.instagram.com/safaabitch/" class="social__link social__link__inst"><img src="img/instagram.png" alt="значок инст" class="social__img"></a>
+                </li>
+            </ul>
+            <p class="social__text">Мои аккаунты в Vk, Telegram, Instagram</p>
+        </div>    
+    </footer>
+    
+    <div class="modal">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Форма</h2>
+            <button class="btn__close">Закрыть окно</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
